@@ -485,6 +485,7 @@ html, body{
     
     #projects-container .card .project-desc h4{
         font-size: 3.5vw;
+        font-weight: 500;
     }
     
     #main-content #skills-content h2{
@@ -513,5 +514,6 @@ html, body{
     #skills-cards-container .card h3{
         font-size: 3.5vw;
         padding: 0.6vw 1.3vw;
+        font-weight: 500;
     }
 }
