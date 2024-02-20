@@ -8,6 +8,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 *::-webkit-scrollbar{
@@ -30,8 +31,9 @@ html, body{
     justify-content: space-between;
     padding: 0 4vw;
     /* background-color: pink; */
-    position: sticky;
+    position: relative sticky;
     top: 0;
+    z-index: 999;
 }
 
 #nav #nav-heading{
@@ -60,6 +62,7 @@ html, body{
     border: none;
     border-radius: 0.25vw;
     transition: all 0.5s ease;
+    font-weight: 600;
 }
 
 #nav #contact-btn:hover{
@@ -269,18 +272,23 @@ html, body{
     /* gap: 2vw; */
 }
 
-#main-content #projects-content #projects-container a{
+#projects-container a{
     color: #000;
     text-decoration: none;
 }
 
-#main-content #projects-content #projects-container .card{
+#projects-container .card{
     height: 16vw;
     width: 16vw;
     background-color: #fff;
     border-radius: 1vw;
     overflow: hidden;
     margin: 0.5vw;
+    transition: all 0.5s ease;
+}
+
+#projects-container .card:hover{
+    transform: scale(1.01);
 }
 
 #projects-container .card img{
@@ -310,7 +318,7 @@ html, body{
     height: fit-content;
     width: 100%;
     /* background-color: palevioletred; */
-    padding: 2vw 4vw;
+    padding: 4vw 4vw 12vw 4vw;
 }
 
 #main-content #skills-content h2{
@@ -434,10 +442,12 @@ html, body{
     #main-content-banner .content .profile-about h2{
         color: #ffffffd1;
         font-size: 8vw;
+        line-height: 1.5;
     }
     
     #main-content-banner .content .profile-about h3{
         font-size: 4vw;
+        font-weight: 500;
     }
     
     #main-content #about-content{
@@ -486,6 +496,10 @@ html, body{
     #projects-container .card .project-desc h4{
         font-size: 3.5vw;
         font-weight: 500;
+    }
+
+    #main-content #skills-content{
+        padding-bottom: 30vw;
     }
     
     #main-content #skills-content h2{
