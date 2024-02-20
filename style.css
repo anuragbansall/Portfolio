@@ -15,7 +15,8 @@ html, body{
 }
 
 #main{
-    height: 100%;
+    height: fit-content;
+    padding-bottom: 5vw;
     width: 100%;
     background-color: #14131A;
     user-select: none;
@@ -162,7 +163,7 @@ html, body{
 }
 
 #main-content{
-    height: 85vh;
+    height: 100vh;
     width: calc(100% - 25%);
     /* background-color: crimson; */
     overflow: hidden auto;
@@ -389,12 +390,12 @@ html, body{
 
 @media (max-width: 600px) {
     #nav{
-        height: 10vw;
+        height: 14vw;
         padding: 0 5vw;
     }
     
     #nav #nav-heading{
-        font-size: 3.6vw;
+        font-size: 5vw;
     }
     
     #nav #nav-heading::after{
@@ -403,8 +404,8 @@ html, body{
     }
     
     #nav #contact-btn{
-        font-size: 2vw;
-        padding: 1vw 1.5vw;
+        font-size: 3vw;
+        padding: 2vw 2.5vw;
     }
 
     #sidebar-container{
@@ -418,48 +419,48 @@ html, body{
     
     
     #main-content-banner{
-        height: 26vw;
+        height: 35vw;
     }
     
     #main-content-banner .content{
-        padding: 0 6vw;
+        padding: 0 0 0 7vw;
     }
     
     #main-content-banner .content .profile-image{
-        height: 20vw;
-        width: 20vw;
+        height: 25vw;
+        width: 25vw;
     }
     
     #main-content-banner .content .profile-about h2{
         color: #ffffffd1;
-        font-size: 5.5vw;
+        font-size: 8vw;
     }
     
     #main-content-banner .content .profile-about h3{
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
     
     #main-content #about-content{
-        padding: 7vw 4vw 4vw 4vw;
+        padding: 12vw 4vw 4vw 4vw;
     }
     
     #main-content #about-content h2{
         color: #fff;
-        font-size: 4vw;
+        font-size: 10vw;
         margin-bottom: 4vw;
     }
     
     #main-content #about-content h3{
-        font-size: 2.2vw;
+        font-size: 4vw;
     }
     
     #main-content #projects-content{
-        padding: 4vw 4vw 8vw 4vw;
+        padding: 10vw 4vw 10vw 4vw;
     }
     
     #main-content #projects-content h2{
-        font-size: 4vw;
-        margin-bottom: 4vw;
+        font-size: 10vw;
+        margin-bottom: 10vw;
     }
     
     #main-content #projects-content #projects-container{
@@ -469,30 +470,31 @@ html, body{
         display: flex;
         flex-wrap: wrap;
         /* gap: 2vw; */
+        justify-content: center;
     }
     
     #main-content #projects-content #projects-container .card{
-        height: 30vw;
-        width: 30vw;
-        margin: 1.2vw;
+        height: 60vw;
+        width: 70vw;
+        margin: 5vw;
     }
     
     #projects-container .card .project-desc h3{
-        font-size: 2.5vw;
+        font-size: 5vw;
     }
     
     #projects-container .card .project-desc h4{
-        font-size: 1.4vw;
+        font-size: 3.5vw;
     }
     
     #main-content #skills-content h2{
-        font-size: 4vw;
-        margin-bottom: 5vw;
+        font-size: 10vw;
+        margin-bottom: 10vw;
     }
     
     #skills-cards-container{
         flex-direction: column;
-        gap: 2vw;
+        gap: 5vw;
         padding: 0 3vw;
         align-items: center;
     }
@@ -505,11 +507,11 @@ html, body{
     
     
     #skills-cards-container .card{
-        font-size: 3vw;
+        font-size: 5vw;
     }
     
     #skills-cards-container .card h3{
-        font-size: 2vw;
+        font-size: 3.5vw;
         padding: 0.6vw 1.3vw;
     }
 }
