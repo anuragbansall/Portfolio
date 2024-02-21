@@ -248,6 +248,23 @@ html, body{
     font-weight: 500;
     text-align: justify;
     font-size: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+#main-content #about-content a{
+    font-size: 1.4vw;
+    background-color: #1C7E42;
+    color: #fff;
+    text-decoration: none;
+    padding: 1vw 2vw;
+    border-radius: 0.25vw;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+#main-content #about-content a:hover{
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 #main-content #projects-content{
@@ -522,8 +539,14 @@ html, body{
     
     #main-content #about-content h3{
         font-size: 4vw;
+        margin-bottom: 12vw;
     }
     
+    #main-content #about-content a{
+        font-size: 5vw;
+        padding: 3vw 6vw;
+    }
+
     #main-content #projects-content{
         padding: 10vw 4vw 10vw 4vw;
     }
@@ -594,7 +617,6 @@ html, body{
     #main-content #contact-content{
         /* background-color: rebeccapurple; */
         padding: 5vw 7vw 25vw 5vw;
-        display: initial;
         display: flex;
         flex-direction: column;
     }
@@ -607,6 +629,8 @@ html, body{
     #contact-content #contact-items{
         padding: 8vw;
         display: flex;
+        justify-content: center;
+        gap: 6vw;
     }
 
     #contact-content #contact-items a{
