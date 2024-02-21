@@ -24,12 +24,12 @@ html, body{
 }
 
 #nav{
-    height: 6vw;
+    height: fit-content;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 4vw;
+    padding: 2vw 4vw;
     /* background-color: pink; */
     position: relative sticky;
     top: 0;
@@ -475,12 +475,12 @@ html, body{
 
 @media (max-width: 600px) {
     #nav{
-        height: 14vw;
-        padding: 0 5vw;
+        height: fit-content;
+        padding: 5vw 5vw;
     }
     
     #nav #nav-heading{
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
     
     #nav #nav-heading::after{
@@ -489,7 +489,7 @@ html, body{
     }
     
     #nav #contact-btn{
-        font-size: 3vw;
+        font-size: 3.2vw;
         padding: 2vw 2.5vw;
     }
 
