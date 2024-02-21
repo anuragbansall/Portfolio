@@ -46,7 +46,7 @@ html, body{
     content: "";
     height: 1vw;
     width: 1vw;
-    background-color: #1C7E42;
+    animation: lightBlinkAnime 2s alternate infinite linear;
     position: absolute;
     border-radius: 50%;
     top: 50%;
@@ -56,8 +56,8 @@ html, body{
 
 #nav #contact-btn{
     font-size: 1.2vw;
-    padding: 0.7vw 1vw;
-    background-color: #2bd575c4;
+    padding: 1vw 1.5vw;
+    background-color: #1C7E42;
     color: #fff;
     border: none;
     border-radius: 0.25vw;
@@ -68,7 +68,7 @@ html, body{
 
 #nav #contact-btn:hover{
     cursor: pointer;
-    background-color: #2bd575ec;
+    opacity: 1;
 }
 
 #main>.content{
@@ -318,7 +318,7 @@ html, body{
     width: 100%;
     height: 50%;
     object-fit: cover;
-    object-position: center;
+    animation: cardImgScroll 8s alternate infinite ease-in-out;
 }
 
 #projects-container .card .project-desc{
@@ -330,11 +330,13 @@ html, body{
 #projects-container .card .project-desc h3{
     font-size: 1.5vw;
     line-height: 2;
+    color: #1C1B23;
 }
 
 #projects-container .card .project-desc h4{
     font-size: 1vw;
     font-weight: 100;
+    color: #1C1B23;
 }
 
 #main-content #skills-content{
@@ -388,31 +390,30 @@ html, body{
     border-radius: 0.5vw;
     display: inline-block;
     margin: 0.5vw;
-    border: 0.1vw solid transparent;
     transition: all 0.5s ease;
 }
 
-#skills-cards-container .card h3:nth-child(2n):hover{
+#skills-cards-container .card .basic{
     border: 0.1vw solid #2B569E;
     color: #2B569E;
-    /* cursor: pointer; */
 }
 
-#skills-cards-container .card h3:nth-child(3n):hover{
+#skills-cards-container .card .normal{
     border: 0.1vw solid #1C7E42;
     color: #1C7E42;
-    /* cursor: pointer; */
 }
 
-#skills-cards-container .card h3:nth-child(4n):hover{
+#skills-cards-container .card .vimp{
     border: 0.1vw solid #9D4D17;
     color: #9D4D17;
-    /* cursor: pointer; */
 }
-#skills-cards-container .card h3:nth-child(5n):hover{
+#skills-cards-container .card .imp{
     border: 0.1vw solid #94730F;
     color: #94730F;
-    /* cursor: pointer; */
+}
+
+#skills-cards-container .card h3:hover{
+    color: #ddd;
 }
 
 #main-content #contact-content{
@@ -490,7 +491,7 @@ html, body{
     
     #nav #contact-btn{
         font-size: 3.2vw;
-        padding: 2vw 2.5vw;
+        padding: 2.5vw 3vw;
     }
 
     #sidebar-container{
@@ -543,8 +544,9 @@ html, body{
     }
     
     #main-content #about-content a{
-        font-size: 5vw;
+        font-size: 4.8vw;
         padding: 3vw 6vw;
+        font-weight: 510;
     }
 
     #main-content #projects-content{
@@ -653,4 +655,22 @@ html, body{
         color: #8B8A91;
     }
     
+}
+
+@keyframes lightBlinkAnime{
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: #1C7E42;
+    }
+}
+
+@keyframes cardImgScroll{
+    from{
+        object-position: top;
+    }
+    to{
+        object-position: bottom;
+    }
 }
