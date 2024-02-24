@@ -471,6 +471,7 @@ html, body{
 
     #sidebar-container{
         position: absolute;
+        top: -100%;
         right: -100%;
         z-index: 998;
         width: 100%;
@@ -480,9 +481,9 @@ html, body{
 
     #sidebar-container #sidebar{
         border-radius: 0;
-        padding: 12vw 5vw;
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
         background-color: #1c1b238d;
         backdrop-filter: blur(10px);

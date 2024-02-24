@@ -45,10 +45,12 @@ menuBtn.addEventListener("click", function(){
     isMenu = !isMenu;
     if(isMenu){
         sideBar.style.right = "0%";
+        sideBar.style.top = "0%";
         menuBtn.classList.remove("ri-menu-3-line");
         menuBtn.classList.add("ri-close-fill");
     } else{
         sideBar.style.right = "-100%";
+        sideBar.style.top = "-100%";
         menuBtn.classList.remove("ri-close-fill");
         menuBtn.classList.add("ri-menu-3-line");
     }
