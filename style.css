@@ -46,7 +46,7 @@ html, body{
     content: "";
     height: 1vw;
     width: 1vw;
-    animation: lightBlinkAnime 2s alternate infinite linear;
+    background-color: #1C7E42;
     position: absolute;
     border-radius: 50%;
     top: 50%;
@@ -474,6 +474,22 @@ html, body{
 }
 
 
+#mouse-follower{
+    height: 75px;
+    width: 75px;
+    background-color: #ffffff0f;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: 999;
+    border-radius: 50%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
 @media (max-width: 600px) {
     #nav{
         height: fit-content;
@@ -655,15 +671,6 @@ html, body{
         color: #8B8A91;
     }
     
-}
-
-@keyframes lightBlinkAnime{
-    from{
-        background-color: transparent;
-    }
-    to{
-        background-color: #1C7E42;
-    }
 }
 
 @keyframes cardImgScroll{
