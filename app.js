@@ -14,6 +14,7 @@ allAnchor.forEach(function(a){
     })
 })
 
+
 allAnchor.forEach(function(a){
     a.addEventListener("mouseleave", function(){
         mouseFollower.innerText = ""
