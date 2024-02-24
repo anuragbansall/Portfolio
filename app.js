@@ -22,12 +22,12 @@ allAnchor.forEach(function(a){
 
 allBtns.forEach(function(btn){
     btn.addEventListener("mouseover", function(){
-        mouseFollower.innerText = "Click"
+        mouseFollower.innerHTML = "Click"
     })
 })
 
 allBtns.forEach(function(btn){
     btn.addEventListener("mouseleave", function(){
-        mouseFollower.innerText = ""
+        mouseFollower.innerHTML = ""
     })
 })

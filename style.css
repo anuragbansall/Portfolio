@@ -671,6 +671,10 @@ html, body{
         color: #8B8A91;
     }
     
+    #mouse-follower{
+        display: none;
+    }
+
 }
 
 @keyframes cardImgScroll{
