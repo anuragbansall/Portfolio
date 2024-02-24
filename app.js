@@ -1,5 +1,6 @@
 let body = document.querySelector("body");
 let mouseFollower = document.querySelector("#mouse-follower");
+let mouseFollowerDefText = mouseFollower.innerText;
 let allAnchor = document.querySelectorAll("a");
 let allBtns = document.querySelectorAll("button");
 
@@ -17,18 +18,18 @@ allAnchor.forEach(function(a){
 
 allAnchor.forEach(function(a){
     a.addEventListener("mouseleave", function(){
-        mouseFollower.innerText = ""
+        mouseFollower.innerText = mouseFollowerDefText;
     })
 })
 
 allBtns.forEach(function(btn){
     btn.addEventListener("mouseover", function(){
-        mouseFollower.innerHTML = "Click"
+        mouseFollower.innerHTML = "Click";
     })
 })
 
 allBtns.forEach(function(btn){
     btn.addEventListener("mouseleave", function(){
-        mouseFollower.innerHTML = ""
+        mouseFollower.innerHTML = mouseFollowerDefText;
     })
 })
