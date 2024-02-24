@@ -36,6 +36,7 @@ allBtns.forEach(function(btn){
 
 
 let sideBar = document.querySelector("#sidebar-container");
+sideBar.style.transition = "1s";
 let menuBtn = document.querySelector("#menu-btn");
 
 let isMenu = false;
@@ -49,7 +50,7 @@ menuBtn.addEventListener("click", function(){
         menuBtn.classList.remove("ri-menu-3-line");
         menuBtn.classList.add("ri-close-fill");
     } else{
-        sideBar.style.right = "-100%";
+        // sideBar.style.right = "-100%";
         sideBar.style.top = "-100%";
         menuBtn.classList.remove("ri-close-fill");
         menuBtn.classList.add("ri-menu-3-line");
