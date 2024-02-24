@@ -33,3 +33,25 @@ allBtns.forEach(function(btn){
         mouseFollower.innerHTML = mouseFollowerDefText;
     })
 })
+
+
+let sideBar = document.querySelector("#sidebar-container");
+let menuBtn = document.querySelector("#menu-btn");
+
+let isMenu = false;
+
+sideBar.style.display = "none";
+menuBtn.classList.add("ri-menu-3-line");
+
+menuBtn.addEventListener("click", function(){
+    isMenu = !isMenu;
+    if(isMenu){
+        sideBar.style.display = "initial";
+        menuBtn.classList.remove("ri-menu-3-line");
+        menuBtn.classList.add("ri-close-fill");
+    } else{
+        sideBar.style.display = "none";
+        menuBtn.classList.remove("ri-close-fill");
+        menuBtn.classList.add("ri-menu-3-line");
+    }
+})
