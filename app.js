@@ -56,24 +56,3 @@ menuBtn.addEventListener("click", function(){
         menuBtn.classList.add("ri-menu-3-line");
     }
 })
-
-
-
-// GSAP
-
-let tl = gsap.timeline();
-
-tl.from(".profile-image",{
-    scale: 0,
-    duration: 1,
-})
-
-tl.from(".profile-about h2",{
-    scale: 0,
-    duration: 0.5,
-})
-
-tl.from(".profile-about h3",{
-    scale: 0,
-    duration: 0.5,
-})
