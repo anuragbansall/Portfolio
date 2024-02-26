@@ -17,10 +17,11 @@ html, body{
 
 #main{
     height: fit-content;
-    padding-bottom: 5vw;
+    /* padding-bottom: 5vw; */
     width: 100%;
     background-color: #14131A;
     user-select: none;
+    /* overflow: hidden; */
 }
 
 #nav{
