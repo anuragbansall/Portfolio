@@ -1,4 +1,5 @@
-let body = document.querySelector("body");
+function mouseFollower(){
+    let body = document.querySelector("body");
 let mouseFollower = document.querySelector("#mouse-follower");
 let mouseFollowerDefText = mouseFollower.innerText;
 let allAnchor = document.querySelectorAll("a");
@@ -33,9 +34,10 @@ allBtns.forEach(function(btn){
         mouseFollower.innerHTML = mouseFollowerDefText;
     })
 })
+}
 
-
-let sideBar = document.querySelector("#sidebar-container");
+function menuBar(){
+    let sideBar = document.querySelector("#sidebar-container");
 sideBar.style.transition = "1s";
 let menuBtn = document.querySelector("#menu-btn");
 
@@ -56,3 +58,7 @@ menuBtn.addEventListener("click", function(){
         menuBtn.classList.add("ri-menu-3-line");
     }
 })
+}
+
+mouseFollower();
+menuBar();
