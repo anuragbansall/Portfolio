@@ -1,8 +1,22 @@
+@font-face {
+    font-family: "Plain Light";
+    src: url(./fonts/plain-light-webfont.woff);
+}
+@font-face {
+    font-family: 'Silk Serif';
+    src: url(./fonts/silkserif-lightitalic-webfont.woff);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+*::-webkit-scrollbar{
+    display: none;
 }
 
 html, body{
@@ -11,9 +25,65 @@ html, body{
     overflow: hidden auto;
 }
 
-*::-webkit-scrollbar{
-    display: none;
+#landing-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #111111;
+    z-index: 9999;
+    padding: 16vh 8vw;
 }
+
+#landing-page h2{
+    color: #fff;
+    /* display: inline-block; */
+    /* background-color: rebeccapurple; */
+    font-size: 4vw;
+    font-family: serif;
+    color: #ffffffd4;
+}
+
+#landing-page h2 .counter{
+    /* background-color: gainsboro; */
+    width: 8vw;
+    display: inline-block;
+    text-align: center;
+}
+
+#landing-page .line{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+#landing-page h1{
+    color: #ffffffa4;
+    font-size: 6vw;
+    line-height: 10vw;
+    font-family: 'Silk Serif';
+    font-weight: 400;
+    overflow: hidden;
+    /* display: inline-block; */
+    /* background-color: gainsboro; */
+}
+/* 
+#landing-page h1 .progress{
+    font-size: 5vw;
+    font-family: "Plain Light";
+    display: inline-block;
+}
+
+#landing-page h1 .progress .counter{
+    /* background-color: rebeccapurple; */
+    /* display: inline-block;
+    width: 7vw;
+    text-align: end;
+} */ 
+
 
 #main{
     height: fit-content;
@@ -440,6 +510,34 @@ html, body{
 }
 
 @media (max-width: 600px) {
+    #landing-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #landing-page .line{
+        display: initial;
+    }
+    
+    #landing-page h2{
+        font-size: 11vw;
+    }
+    
+    #landing-page h2 .counter{
+        width: 20vw;
+    }
+    
+    #landing-page h1{
+        font-size: 15vw;
+        line-height: 20vw;
+    }
+
+    #landing-page h1:nth-child(1){
+        display: none;
+    }
+
     #nav{
         height: fit-content;
         padding: 5vw 5vw;
