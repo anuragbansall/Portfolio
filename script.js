@@ -115,8 +115,51 @@
         })
     }
 
+    function aboutContentTextAnime(){
+        let h3 = document.querySelectorAll("#about-content h3");
+        let h3Content = "";      
+        h3.forEach(function(h3){
+            let allCharsArr = h3.innerText.split("")  
+            allCharsArr.forEach(function(el){
+                h3Content += `<span>${el}</span>`
+            })
+            h3.innerHTML = h3Content
+        })
+        
+
+        gsap.from("#about-content h3 span",{
+            color:"#14131A",
+            stagger:0.2,
+            scrollTrigger:{
+                trigger:"#about-content",
+                scroller:"#main-content",
+                // markers:true,
+                start:"top 30%",
+                end:"bottom 60%",
+                // pin:true,
+                scrub:2,
+            }
+        })
+    }
+
+    function skillsCardsAnime(){
+        gsap.from("#skills-content #skills-cards-container .card",{
+            x:"-100%",
+            scrollTrigger:{
+                trigger:"#skills-content #skills-cards-container",
+                scroller:"#main-content",
+                // markers:true,
+                start:"top 80%",
+                end:"top 35%",
+                scrub:1,
+            }
+        })
+    }
+
     // locoMotive();
     gsapLoadingPageH1Anime()
     loadingPageAnime();
     // gsapBannerAnime();
+    aboutContentTextAnime();
     projectsCardAnime();
+    skillsCardsAnime();

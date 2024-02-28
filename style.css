@@ -437,6 +437,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;
+    overflow: hidden;
 }
 
 #skills-cards-container .card{
