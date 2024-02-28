@@ -37,12 +37,26 @@ html, body{
 }
 
 #landing-page h2{
-    color: #fff;
     /* display: inline-block; */
     /* background-color: rebeccapurple; */
     font-size: 4vw;
     font-family: serif;
-    color: #ffffffd4;
+    color: #ffffffbf;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    width:fit-content
+}
+
+#landing-page h2 .line{
+    width: 0%;
+    height: 0.5vw;
+    background-color: #ffffffbf;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
 }
 
 #landing-page h2 .counter{

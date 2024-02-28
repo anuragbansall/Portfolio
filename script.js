@@ -78,6 +78,7 @@
 
     function loadingPageAnime(){
         let counter = document.querySelector("#landing-page h2 .counter");
+        let progressBar = document.querySelector("#landing-page h2 .line");
         let count = 0;
         let interval = setInterval(function(){
             if(count == 100){
@@ -87,6 +88,7 @@
             else{
             count++;
             counter.innerText = count;
+            progressBar.style.width = `${count}%`
             }
         },30)
     }
