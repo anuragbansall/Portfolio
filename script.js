@@ -158,10 +158,18 @@
         })
     }
 
+    document.addEventListener("mousemove", function(e) {
+        gsap.to("#mouse-follower", { 
+            x: e.x,
+            y: e.y,
+        });
+    });
+    
+
     // locoMotive();
     gsapLoadingPageH1Anime()
     loadingPageAnime();
     // gsapBannerAnime();
     aboutContentTextAnime();
     projectsCardAnime();
-    skillsCardsAnime();
+    skillsCardsAnime();z

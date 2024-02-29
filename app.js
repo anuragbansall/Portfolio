@@ -60,5 +60,5 @@ menuBtn.addEventListener("click", function(){
 })
 }
 
-mouseFollower();
+// mouseFollower();
 menuBar();
