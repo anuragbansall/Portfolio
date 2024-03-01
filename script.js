@@ -130,7 +130,8 @@
         
 
         gsap.from("#about-content h3 span",{
-            color:"#14131A",
+            // color:"#222127",
+            opacity:0.3,
             stagger:0.2,
             scrollTrigger:{
                 trigger:"#about-content",
