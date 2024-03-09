@@ -395,6 +395,23 @@ html, body{
     margin: 0.5vw;
     transition: all 0.5s ease;
     opacity: 0.8;
+    overflow: hidden;
+}
+
+#projects-container .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1%;
+    border-width: 0 3vw 3vw 0;
+    border-style: dashed;
+    border-color: #14131A #14131A #fff #fff;
+    background: crimson;
+    display: block;
+    width: 0;
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.3), -3px 3px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.3), -3px 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3), -3px 3px 3px rgba(0,0,0,0.2);
 }
 
 #projects-container .card:hover{
