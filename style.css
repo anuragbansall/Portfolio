@@ -403,7 +403,7 @@ html, body{
     position: absolute;
     top: 0;
     right: -1%;
-    border-width: 0 3vw 3vw 0;
+    border-width: 0 2vw 2vw 0;
     border-style: dashed;
     border-color: #14131A #14131A #fff #fff;
     background: crimson;
@@ -731,6 +731,10 @@ html, body{
         height: 60vw;
         width: 70vw;
         margin: 5vw;
+    }
+
+    #projects-container .card:before {
+        border-width: 0 7vw 7vw 0;
     }
     
     #projects-container .card .project-desc h3{
