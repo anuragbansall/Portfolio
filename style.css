@@ -22,7 +22,6 @@
 html, body{
     height: 100%;
     width: 100%;
-    overflow: hidden auto;  
 }
 
 #landing-page{
@@ -262,6 +261,7 @@ html, body{
     width: calc(100% - 25%);
     /* background-color: crimson; */
     overflow: hidden auto;
+    scroll-behavior: smooth;
 }
 
 

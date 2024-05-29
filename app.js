@@ -1,5 +1,5 @@
 function mouseFollower(){
-    let body = document.querySelector("body");
+let body = document.querySelector("body");
 let mouseFollower = document.querySelector("#mouse-follower");
 let mouseFollowerDefText = mouseFollower.innerText;
 let allAnchor = document.querySelectorAll("a");
