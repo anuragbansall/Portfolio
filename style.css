@@ -481,7 +481,7 @@ html, body{
     justify-content: flex-start; */
     /* flex-wrap: wrap; */
     /* gap: 1vw; */
-    padding: 1vw 2vw 3vw 1vw;
+    padding: 1vw;
     border-radius: 0.5vw;
 }
 
@@ -492,8 +492,8 @@ html, body{
 }
 
 #skills-cards-container .card h3{
-    font-size: 1vw;
-    font-weight: 100;
+    font-size: 1.2vw;
+    font-weight: 400;
     background-color: #14131A;
     padding: 0.6vw 1vw;
     border-radius: 0.5vw;

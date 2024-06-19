@@ -173,4 +173,4 @@
     // gsapBannerAnime();
     aboutContentTextAnime();
     projectsCardAnime();
-    skillsCardsAnime();z
+    skillsCardsAnime();
