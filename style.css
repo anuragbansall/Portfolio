@@ -398,7 +398,7 @@ html, body{
     overflow: hidden;
 }
 
-#projects-container .card:before {
+/* #projects-container .card:before {
     content: "";
     position: absolute;
     top: 0;
@@ -412,7 +412,7 @@ html, body{
     -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.3), -3px 3px 3px rgba(0,0,0,0.2);
     -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.3), -3px 3px 3px rgba(0,0,0,0.2);
     box-shadow: 0 3px 3px rgba(0,0,0,0.3), -3px 3px 3px rgba(0,0,0,0.2);
-}
+} */
 
 #projects-container .card:hover{
     opacity: 0.9;
