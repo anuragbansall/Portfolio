@@ -3,20 +3,26 @@ let projectData = [
     {
         image : "./assets/premier-project.png",
         title : "Premier Clone",
-        techUsed : "HTML, CSS",
+        techUsed : "CSS",
         link : "https://premier-clone.netlify.app/"
     },
     {
         image : "./assets/dribbble-project.png",
         title : "Dribbble Clone",
-        techUsed : "HTML, CSS",
+        techUsed : "CSS",
         link : "https://dribbble-site-clone.netlify.app/"
     },
     {
         image : "./assets/live-coderr-project.png",
         title : "Live Coderr",
-        techUsed : "HTML, CSS, JavaScript",
+        techUsed : "JavaScript",
         link : "https://dribbble-site-clone.netlify.app/"
+    },
+    {
+        image : "./assets/newsnexus-project.png",
+        title : "NewsNexus",
+        techUsed : "JavaScript, API",
+        link : "https://github.com/anuragbansall/NewsNexus"
     },
 ]
 
