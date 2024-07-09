@@ -16,7 +16,7 @@ let projectData = [
         image : "./assets/live-coderr-project.png",
         title : "Live Coderr",
         techUsed : "JavaScript",
-        link : "https://dribbble-site-clone.netlify.app/"
+        link : "https://livecoderr.vercel.app/"
     },
     {
         image : "./assets/newsnexus-project.png",
